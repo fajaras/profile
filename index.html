@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Profile & Consulting Portfolio - Strategic Advisory, Solutions Architecture & Digital Transformation">
+  <meta name="author" content="Professional Consultant">
+  <title>Professional Profile | Strategic Consultant & Solutions Architect</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+              950: '#1e1b4b',
+            }
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ========================================================= -->
+  <!-- NAVIGATION BAR                                            -->
+  <!-- ========================================================= -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/80 dark:border-slate-800/80 transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo / Name -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-500 text-white flex items-center justify-center font-bold text-lg shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+            FP
+          </div>
+          <div>
+            <span class="font-heading font-bold text-lg text-slate-900 dark:text-white tracking-tight">Fajar</span>
+            <span class="text-xs block text-brand-600 dark:text-brand-400 font-semibold tracking-wide uppercase">Consultant & Advisor</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <a href="#home" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400 transition-colors">Home</a>
+          <a href="#about" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400 transition-colors">About</a>
+          <a href="#services" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400 transition-colors">Services</a>
+          <a href="#experience" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400 transition-colors">Experience</a>
+          <a href="#testimonials" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400 transition-colors">Testimonials</a>
+          <a href="#contact" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="hidden md:flex items-center space-x-4">
+          <!-- Dark Mode Toggle Button -->
+          <button id="theme-toggle" type="button" aria-label="Toggle dark mode" class="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors">
+            <!-- Moon icon (for dark mode toggle) -->
+            <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <!-- Sun icon (for light mode toggle) -->
+            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+
+          <!-- Book Call CTA -->
+          <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-500/25 transition-all hover:shadow-lg hover:shadow-brand-500/35 hover:-translate-y-0.5">
+            Book Consultation
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden space-x-2">
+          <button id="theme-toggle-mobile" type="button" aria-label="Toggle dark mode" class="p-2 rounded-xl text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800">
+            <svg id="theme-toggle-dark-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          
+          <button id="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" class="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-4 pt-3 pb-6 space-y-2">
+      <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Home</a>
+      <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">About</a>
+      <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Services</a>
+      <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Experience</a>
+      <a href="#testimonials" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Testimonials</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+      <div class="pt-2">
+        <a href="#contact" class="mobile-nav-link block text-center w-full py-3 rounded-xl font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-md">Book Consultation</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================= -->
+  <!-- HERO SECTION                                              -->
+  <!-- ========================================================= -->
+  <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-28 gradient-mesh overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left: Text & Pitch -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Availability Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Available for Q3/Q4 Strategic Engagements
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.15]">
+            Bridging Business Vision with 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-indigo-600 to-sky-500">Scalable Execution</span>.
+          </h1>
+
+          <!-- Subtitle / Bio summary -->
+          <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Strategic Consultant & Solutions Architect helping enterprises and high-growth organizations modernize technology architectures, optimize operations, and achieve measurable ROI.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#contact" class="px-7 py-3.5 rounded-xl font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-500/30 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all">
+              Schedule Initial Consultation
+            </a>
+            <a href="#services" class="px-7 py-3.5 rounded-xl font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-0.5">
+              Explore Services
+            </a>
+          </div>
+
+          <!-- Metrics Counter Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-200/80 dark:border-slate-800/80 text-left">
+            <div>
+              <div class="font-heading text-3xl font-bold text-slate-900 dark:text-white">5+</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Years Experience</div>
+            </div>
+            <div>
+              <div class="font-heading text-3xl font-bold text-slate-900 dark:text-white">45+</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Projects Delivered</div>
+            </div>
+            <div>
+              <div class="font-heading text-3xl font-bold text-slate-900 dark:text-white">99%</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Client Satisfaction</div>
+            </div>
+            <div>
+              <div class="font-heading text-3xl font-bold text-slate-900 dark:text-white">$15M+</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Impact Generated</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Profile Card Showcase -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            
+            <!-- Glow background -->
+            <div class="absolute -inset-2 bg-gradient-to-r from-brand-500 to-sky-500 rounded-3xl blur-2xl opacity-20 dark:opacity-30"></div>
+
+            <!-- Profile Frame -->
+            <div class="relative bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none">
+              
+              <div class="flex items-center gap-5">
+                <!-- Avatar placeholder with initials / photo -->
+                <div class="relative">
+                  <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-brand-600 via-indigo-600 to-sky-500 flex items-center justify-center text-white font-heading font-extrabold text-2xl shadow-lg shadow-brand-500/25">
+                    FP
+                  </div>
+                  <span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-900 flex items-center justify-center">
+                    <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                </div>
+                
+                <div>
+                  <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white">Fajar Annas Susanto</h3>
+                  <p class="text-sm font-medium text-brand-600 dark:text-brand-400">Principal Consultant</p>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Enterprise Solutions & Advisory</p>
+                </div>
+              </div>
+
+              <!-- Quick Focus Badges -->
+              <div class="mt-6 space-y-3">
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-100 dark:border-slate-800 flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-brand-600 dark:text-brand-400 flex items-center justify-center font-bold">
+                    🚀
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold text-slate-900 dark:text-white">Business Transformation</div>
+                    <div class="text-[11px] text-slate-500 dark:text-slate-400">Process re-engineering & operational agility</div>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-100 dark:border-slate-800 flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 flex items-center justify-center font-bold">
+                    🏗️
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold text-slate-900 dark:text-white">Technology Architecture</div>
+                    <div class="text-[11px] text-slate-500 dark:text-slate-400">Scalable cloud & enterprise modernization</div>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-100 dark:border-slate-800 flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
+                    📊
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold text-slate-900 dark:text-white">Data & Performance ROI</div>
+                    <div class="text-[11px] text-slate-500 dark:text-slate-400">Metrics, KPI dashboards & cost optimization</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Connect prompt -->
+              <div class="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
+                <span class="text-slate-500 dark:text-slate-400">Based in: <strong>Surabaya / Remote Worldwide</strong></span>
+                <a href="#contact" class="font-semibold text-brand-600 dark:text-brand-400 hover:underline">Get in touch &rarr;</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- ABOUT SECTION                                             -->
+  <!-- ========================================================= -->
+  <section id="about" class="py-20 md:py-28 bg-white dark:bg-slate-900/60 border-y border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-brand-600 dark:text-brand-400 uppercase">Executive Summary</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+          Delivering Clarity, Strategy, and Tangible Results
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          I partner with founders, executives, and organizations looking to bridge the gap between ambitious strategies and high-performing real-world execution.
+        </p>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Bio Narrative -->
+        <div class="lg:col-span-7 space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed">
+          <p class="text-lg">
+            With over <strong>5 years of expertise</strong> spanning strategy, technology transformation, and systems architecture, I have helped organizations dismantle operational silos, deploy resilient software systems, and accelerate growth.
+          </p>
+          <p>
+            My methodology is rooted in <strong>pragmatism and measurable metrics</strong>. Rather than offering one-size-fits-all consulting decks, I collaborate directly with key stakeholders to diagnose systemic bottlenecks, craft customized operational frameworks, and guide implementation through every phase.
+          </p>
+          <p>
+            Whether you are a scale-up preparing for institutional investment, an enterprise modernizing legacy architecture, or a leadership team seeking fractional guidance, my goal is to deliver self-sustaining results that thrive long after the engagement concludes.
+          </p>
+
+          <!-- Action buttons for Bio -->
+          <div class="pt-4 flex flex-wrap gap-4">
+            <button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors">
+              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+              </svg>
+              Print / Save Profile Overview
+            </button>
+            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/20 transition-all">
+              Discuss an Opportunity &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 Pillars of Value -->
+        <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-xl bg-brand-100 dark:bg-brand-950/80 text-brand-600 dark:text-brand-400 flex items-center justify-center font-bold mb-3">
+              🎯
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1">Strategic Clarity</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-normal">
+              Eliminate guesswork with evidence-based roadmaps aligned with key business outcomes.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-950/80 text-sky-600 dark:text-sky-400 flex items-center justify-center font-bold mb-3">
+              ⚡
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1">Rapid Delivery</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-normal">
+              Translate complex strategies into iterative sprint milestones with minimal overhead.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold mb-3">
+              📈
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1">Scalable Systems</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-normal">
+              Architect workflows and software infrastructure built to support 10x scale sustainably.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-xl bg-purple-100 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400 flex items-center justify-center font-bold mb-3">
+              🤝
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1">Knowledge Transfer</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-normal">
+              Empower your in-house leaders with actionable playbooks and continuous documentation.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- SERVICES SECTION                                          -->
+  <!-- ========================================================= -->
+  <section id="services" class="py-20 md:py-28 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-brand-600 dark:text-brand-400 uppercase">Consulting Services</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+          Tailored Consulting Engagements
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          Flexible advisory packages designed for corporate executives, fast-growing startups, and specialized tech teams.
+        </p>
+      </div>
+
+      <!-- Services 4 Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Service 1 -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-7 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-all hover:shadow-xl hover:-translate-y-1 group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 dark:bg-brand-950/80 text-brand-600 dark:text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              🧭
+            </div>
+            <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">
+              Strategic Advisory & Roadmapping
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+              Align executive objectives with actionable multi-quarter initiatives, market positioning, and tech viability.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="text-brand-600 dark:text-brand-400 font-bold">✓</span> Technology & Business Alignment
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-brand-600 dark:text-brand-400 font-bold">✓</span> Executive Advisory Sprints
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-brand-600 dark:text-brand-400 font-bold">✓</span> Growth & Scaling Roadmaps
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
+            <a href="#contact" class="text-xs font-semibold text-brand-600 dark:text-brand-400 group-hover:text-brand-700 flex items-center justify-between">
+              Request Advisory Info <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-7 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-all hover:shadow-xl hover:-translate-y-1 group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-950/80 text-sky-600 dark:text-sky-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              ⚡
+            </div>
+            <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">
+              Operations & Process Optimization
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+              Identify friction points, automate redundant workflows, and boost organizational throughput.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="text-sky-600 dark:text-sky-400 font-bold">✓</span> Bottleneck Root-Cause Audits
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sky-600 dark:text-sky-400 font-bold">✓</span> Workflow & Task Automation
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sky-600 dark:text-sky-400 font-bold">✓</span> Standard Operating Playbooks
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
+            <a href="#contact" class="text-xs font-semibold text-brand-600 dark:text-brand-400 group-hover:text-brand-700 flex items-center justify-between">
+              Optimize Operations <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-7 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-all hover:shadow-xl hover:-translate-y-1 group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              🏛️
+            </div>
+            <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">
+              Architecture & Systems Modernization
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+              Design high-availability cloud systems, evaluate vendor tech stacks, and oversee migrations without downtime.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="text-indigo-600 dark:text-indigo-400 font-bold">✓</span> Cloud & Infrastructure Review
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-indigo-600 dark:text-indigo-400 font-bold">✓</span> Legacy Stack Refactoring Plans
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-indigo-600 dark:text-indigo-400 font-bold">✓</span> Enterprise Security & Governance
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
+            <a href="#contact" class="text-xs font-semibold text-brand-600 dark:text-brand-400 group-hover:text-brand-700 flex items-center justify-between">
+              Review Architecture <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-7 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-all hover:shadow-xl hover:-translate-y-1 group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              👥
+            </div>
+            <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">
+              Fractional Leadership & Delivery
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+              Embedded leadership support as Interim Head of Solutions or Technical Advisor to mentor and guide key teams.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span> Fractional Executive Leadership
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span> Cross-Functional Team Mentoring
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span> Vendor Selection & RFP Vetting
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
+            <a href="#contact" class="text-xs font-semibold text-brand-600 dark:text-brand-400 group-hover:text-brand-700 flex items-center justify-between">
+              Hire Fractional <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Engagement Workflow Process -->
+      <div class="mt-20 p-8 sm:p-12 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-xs font-bold tracking-widest text-brand-600 dark:text-brand-400 uppercase">Consulting Methodology</span>
+          <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-2">
+            The 4-Stage Engagement Framework
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+          
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-100 dark:border-slate-800/80">
+            <div class="text-2xl font-heading font-extrabold text-brand-600 dark:text-brand-400 mb-2">01</div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1.5">Discovery & Audit</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Deep dive into current operating conditions, team feedback, codebases, data flows, and executive goals.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-100 dark:border-slate-800/80">
+            <div class="text-2xl font-heading font-extrabold text-brand-600 dark:text-brand-400 mb-2">02</div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1.5">Strategic Blueprint</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Delivery of comprehensive architecture blueprints, sprint plans, risk mitigation strategies, and ROI metrics.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-100 dark:border-slate-800/80">
+            <div class="text-2xl font-heading font-extrabold text-brand-600 dark:text-brand-400 mb-2">03</div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1.5">Execution & Sprints</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Hands-on leadership alongside your key engineers and managers to execute changes with zero disruption.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-100 dark:border-slate-800/80">
+            <div class="text-2xl font-heading font-extrabold text-brand-600 dark:text-brand-400 mb-2">04</div>
+            <h4 class="font-heading font-bold text-slate-900 dark:text-white text-base mb-1.5">Handoff & Autonomy</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Full documentation, team enablement sessions, and measurement against agreed performance targets.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- EXPERIENCE & SELECTED CASE STUDIES SECTION               -->
+  <!-- ========================================================= -->
+  <section id="experience" class="py-20 md:py-28 bg-white dark:bg-slate-900/60 border-t border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-brand-600 dark:text-brand-400 uppercase">Track Record</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+          Selected Engagements & Outcomes
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          A glimpse into past client achievements, architectural overhauls, and business impact.
+        </p>
+      </div>
+
+      <!-- Case Studies List -->
+      <div class="space-y-8 max-w-4xl mx-auto">
+        
+        <!-- Case Study 1 -->
+        <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500/50 transition-all">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+            <div>
+              <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-100 dark:bg-brand-950/80 text-brand-700 dark:text-brand-400">FinTech & Payments</span>
+              <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-2">
+                High-Volume Transaction Pipeline Modernization
+              </h3>
+            </div>
+            <span class="text-xs font-medium text-slate-500 dark:text-slate-400 shrink-0">6-Month Engagement</span>
+          </div>
+          
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+            Advised a high-growth payment processor in redesigning their core transaction routing architecture. Replaced monolithic bottlenecks with an event-driven decoupled service model, ensuring financial compliance and automated failovers.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200/60 dark:border-slate-700/60">
+            <div>
+              <div class="font-heading font-bold text-xl text-brand-600 dark:text-brand-400">99.99%</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Platform Uptime Achieved</div>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-xl text-brand-600 dark:text-brand-400">-43%</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Latency Reduction</div>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-xl text-brand-600 dark:text-brand-400">$350k/yr</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Infrastructure Cloud Savings</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500/50 transition-all">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+            <div>
+              <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-400">Enterprise Logistics</span>
+              <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-2">
+                Fleet Tracking & Operational Workflow Automation
+              </h3>
+            </div>
+            <span class="text-xs font-medium text-slate-500 dark:text-slate-400 shrink-0">4-Month Engagement</span>
+          </div>
+          
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+            Conducted end-to-end operational audits across distribution centers. Automated inventory reconciliation and dispatched real-time telematics dashboards, eliminating manual spreadsheet dependencies.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200/60 dark:border-slate-700/60">
+            <div>
+              <div class="font-heading font-bold text-xl text-emerald-600 dark:text-emerald-400">3.5x</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Faster Dispatch Times</div>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-xl text-emerald-600 dark:text-emerald-400">12,000 hrs</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Annual Manual Labor Saved</div>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-xl text-emerald-600 dark:text-emerald-400">100%</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Automated Audit Trails</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500/50 transition-all">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+            <div>
+              <span class="text-xs font-semibold px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-950/80 text-sky-700 dark:text-sky-400">SaaS Scale-Up</span>
+              <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-2">
+                Engineering Governance & Agile Delivery Coaching
+              </h3>
+            </div>
+            <span class="text-xs font-medium text-slate-500 dark:text-slate-400 shrink-0">Fractional Advisory</span>
+          </div>
+          
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+            Served as fractional advisor to the leadership team, introducing unified sprint cadences, automated CI/CD gating, and incident retrospective protocols for 35+ engineers.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200/60 dark:border-slate-700/60">
+            <div>
+              <div class="font-heading font-bold text-xl text-sky-600 dark:text-sky-400">65%</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Faster Release Cycles</div>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-xl text-sky-600 dark:text-sky-400">-50%</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Production Hotfix Incidents</div>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-xl text-sky-600 dark:text-sky-400">Seamless</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Series B Due Diligence</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- TESTIMONIALS SECTION                                      -->
+  <!-- ========================================================= -->
+  <section id="testimonials" class="py-20 md:py-28 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-brand-600 dark:text-brand-400 uppercase">Endorsements</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+          Trusted by Leaders & Founders
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          What executive stakeholders have to say about our collaborative engagements.
+        </p>
+      </div>
+
+      <!-- Testimonial Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              ★★★★★
+            </div>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+              "Fajar came in at a pivotal moment when our engineering team was bogged down with legacy debt. His clarity, architectural acumen, and ability to speak both business and tech saved us months of wasted engineering effort."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-sm">
+              AK
+            </div>
+            <div>
+              <div class="font-heading font-bold text-sm text-slate-900 dark:text-white">Ari Kusuma</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Chief Technology Officer, FinTech Corp</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              ★★★★★
+            </div>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+              "The operational blueprint delivered exceeded our expectations. Our team went from chaotic manual handoffs to a clean, automated sprint workflow that accelerated product delivery by nearly 40%."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">
+              SN
+            </div>
+            <div>
+              <div class="font-heading font-bold text-sm text-slate-900 dark:text-white">Siti Nurhaliza</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Head of Product, SaaS Group</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              ★★★★★
+            </div>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+              "Working with Fajar was one of the highest ROI consulting investments we've made this year. His strategic recommendations were practical, data-backed, and delivered with genuine care for our team's success."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-full bg-sky-600 text-white flex items-center justify-center font-bold text-sm">
+              BW
+            </div>
+            <div>
+              <div class="font-heading font-bold text-sm text-slate-900 dark:text-white">Budi Wicaksono</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Managing Director, LogisTech Solutions</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- CONTACT & ENGAGEMENT INQUIRY SECTION                     -->
+  <!-- ========================================================= -->
+  <section id="contact" class="py-20 md:py-28 bg-white dark:bg-slate-900/60 border-t border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        <!-- Left: Contact Details & Info -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-xs font-bold tracking-widest text-brand-600 dark:text-brand-400 uppercase">Get In Touch</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
+              Let's Discuss Your Next Initiative
+            </h2>
+            <p class="text-slate-600 dark:text-slate-300 text-base mt-4 leading-relaxed">
+              Whether you need strategic advisory, a comprehensive systems audit, or ongoing fractional leadership, I'm ready to help you drive outcomes.
+            </p>
+          </div>
+
+          <!-- Contact items list -->
+          <div class="space-y-4">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-brand-100 dark:bg-brand-950/80 text-brand-600 dark:text-brand-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400">Direct Email</div>
+                <a href="mailto:fajar.consulting@example.com" class="font-heading font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+                  fajar.consulting@example.com
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400">Virtual Discovery Session</div>
+                <div class="font-heading font-semibold text-slate-900 dark:text-white">30-Minute Exploratory Call</div>
+                <div class="text-xs text-brand-600 dark:text-brand-400 mt-0.5">Complimentary & Confidential</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-950/80 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400">Headquarters / Availability</div>
+                <div class="font-heading font-semibold text-slate-900 dark:text-white">Surabaya, Indonesia</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Remote & Worldwide Engagements</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Interactive Contact Form -->
+        <div id="contact-form-section" class="lg:col-span-7">
+          <div class="p-8 sm:p-10 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 shadow-lg shadow-slate-200/40 dark:shadow-none">
+            <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">
+              Send an Advisory Inquiry
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-8">
+              Fill in the form below and you'll receive a personal response within 24 business hours.
+            </p>
+
+            <form id="contact-form" class="space-y-5">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="client-name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    Your Name *
+                  </label>
+                  <input type="text" id="client-name" required placeholder="e.g. Budi Santoso" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 dark:focus:ring-brand-400 transition-all">
+                </div>
+
+                <div>
+                  <label for="client-email" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    Work Email *
+                  </label>
+                  <input type="email" id="client-email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 dark:focus:ring-brand-400 transition-all">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="client-service" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    Primary Area of Interest
+                  </label>
+                  <select id="client-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 dark:focus:ring-brand-400 transition-all">
+                    <option value="Strategic Advisory">Strategic Advisory & Roadmapping</option>
+                    <option value="Operations Optimization">Operations & Workflow Optimization</option>
+                    <option value="Systems Modernization">Architecture & Systems Modernization</option>
+                    <option value="Fractional Leadership">Fractional Leadership / Advisory</option>
+                    <option value="Other Inquiries">General / Other Consultation</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="client-budget" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    Estimated Project Budget / Scope
+                  </label>
+                  <select id="client-budget" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 dark:focus:ring-brand-400 transition-all">
+                    <option value="Exploratory">Initial Discovery / Diagnostic ($3k - $10k)</option>
+                    <option value="Mid Scope">Targeted Project Sprint ($10k - $25k)</option>
+                    <option value="Comprehensive">Enterprise Multi-Month Scope ($25k+)</option>
+                    <option value="Retainer">Monthly Fractional Retainer</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="client-message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                  How can I help you? (Goals, timelines, current challenges) *
+                </label>
+                <textarea id="client-message" rows="4" required placeholder="Tell me a bit about your organization and what goals you're looking to achieve..." class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 dark:focus:ring-brand-400 transition-all"></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-500/25 hover:shadow-brand-500/35 transition-all text-sm flex items-center justify-center">
+                  Submit Consultation Request
+                </button>
+              </div>
+
+              <p class="text-[11px] text-center text-slate-400 dark:text-slate-500">
+                🔒 Strict confidentiality guaranteed. Non-disclosure agreements (NDAs) honored.
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- ========================================================= -->
+  <footer class="py-12 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+        
+        <!-- Brand -->
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-600 to-indigo-500 text-white flex items-center justify-center font-bold text-sm">
+            FP
+          </div>
+          <div>
+            <span class="font-heading font-bold text-sm text-slate-900 dark:text-white">Fajar Annas Susanto</span>
+            <span class="text-xs block text-slate-500 dark:text-slate-400">Strategic Advisory & Solutions</span>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-600 dark:text-slate-400">
+          <a href="#home" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
+          <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">About</a>
+          <a href="#services" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Services</a>
+          <a href="#experience" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Experience</a>
+          <a href="#contact" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-4 text-slate-400 dark:text-slate-500">
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8v-8.37M7.86 6.54a1.63 1.63 0 0 0-1.63 1.63c0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63Z"></path>
+            </svg>
+          </a>
+          <!-- Twitter / X -->
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </svg>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="mt-8 pt-8 border-t border-slate-100 dark:border-slate-900 text-center text-xs text-slate-500 dark:text-slate-500">
+        &copy; <span id="current-year">2026</span> Fajar Annas Susanto. All rights reserved. Designed for professional consulting excellence.
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================= -->
+  <!-- FLOATING INTERACTIVE ELEMENTS                            -->
+  <!-- ========================================================= -->
+  
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Scroll back to top" class="fixed bottom-6 right-6 z-40 p-3 rounded-2xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 shadow-xl border border-slate-200 dark:border-slate-700 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 transition-all opacity-0 pointer-events-none hover:scale-110">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+  <!-- Toast Notification Alert -->
+  <div id="toast-notification" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none max-w-md w-full px-4">
+    <div class="p-4 rounded-2xl bg-emerald-600 text-white shadow-2xl flex items-center gap-3 border border-emerald-500/40">
+      <div class="w-8 h-8 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <div class="text-xs sm:text-sm font-medium" id="toast-message">
+        Your message has been sent successfully!
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
